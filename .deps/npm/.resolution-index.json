@@ -50,7 +50,7 @@
   "contracts/9_Require.sol": {
     "__sources__": {
       "contracts/9_Require.sol": {
-        "content": "// SPDX-License-Identifier: GPL-3.0\r\npragma solidity >=0.8.2 <0.9.0;\r\n\r\ncontract Require {\r\n    \r\n}",
+        "content": "// SPDX-License-Identifier: GPL-3.0\r\npragma solidity >=0.8.2 <0.9.0;\r\n\r\ncontract Require {\r\n    uint256 private codigo = 258658;\r\n    address public propietario;\r\n\r\n    constructor() {\r\n        propietario = msg.sender;\r\n    }\r\n\r\n    function cambiarCodigo(uint256 _codigo) public {\r\n        require(msg.sender == propietario, \"No puedes ejecutar porque no eres el propietario del contrato\");\r\n        codigo = _codigo;\r\n    }\r\n\r\n    function devolverCodigo() public view returns(uint256) {\r\n        return codigo;\r\n    }\r\n\r\n}",
         "file": "contracts/9_Require.sol"
       }
     }
