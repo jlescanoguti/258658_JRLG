@@ -2,7 +2,7 @@
 
 pragma solidity >=0.8.2 <0.9.0;
 
-contract VariableSimples {
+contract Intro {
     uint256 private edad; //por defecto toma el valor de cero
 
     constructor(uint256 _edad) {
@@ -16,4 +16,10 @@ contract VariableSimples {
     function devolverEdad() public view returns (uint256) {
         return edad;
     }
+
+    function sumar(uint256 _valor1, uint256 _valor2) public pure returns(uint256) {
+        return _valor1 + _valor2;
+    }
+
+    
 }
