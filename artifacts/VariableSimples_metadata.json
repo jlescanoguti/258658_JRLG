@@ -1,0 +1,83 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_edad",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_edad",
+						"type": "uint256"
+					}
+				],
+				"name": "cambiarEdad",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "devolverEdad",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/5_VariablesSimples.sol": "VariableSimples"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/5_VariablesSimples.sol": {
+			"keccak256": "0x1d982a6a1ce04391a8496fbce2f6146b8188f4c22bc19dd0ffc3c9a4b069d36d",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://607d008f7b042bebdfabb809084db4877bfbce3ef2ff71408d5286a25285d50c",
+				"dweb:/ipfs/QmaH1bEEtjxWnWnHfR1Q3vy2evQZy6U8MGnFMEADKaNWhK"
+			]
+		}
+	},
+	"version": 1
+}

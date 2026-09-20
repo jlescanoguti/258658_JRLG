@@ -1,0 +1,96 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_cantidad",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_cantidad",
+						"type": "uint256"
+					}
+				],
+				"name": "cambiarCantidad",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "cuentaInicial",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "obtenerCantidad",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/6_Sender.sol": "Sender"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/6_Sender.sol": {
+			"keccak256": "0x78bfee67d99fa92ce50241be26c2cbbc3d4c76ef5570fae7fcb502eb517629f4",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://65b0a0575e5460a216232a18ab0139fcdc9410e29af670d3f3ece414e6737728",
+				"dweb:/ipfs/Qmd9CTicVCQJ2tuAMq99HoLNT81SM5DyqeWw1zAaTni9Vc"
+			]
+		}
+	},
+	"version": 1
+}
