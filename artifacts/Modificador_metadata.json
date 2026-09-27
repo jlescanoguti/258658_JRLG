@@ -1,0 +1,110 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "consultarFondos",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_monto",
+						"type": "uint256"
+					}
+				],
+				"name": "depositarFondos",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "limpiarFondos",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "propietario",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_monto",
+						"type": "uint256"
+					}
+				],
+				"name": "retirarFondos",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/10_Modificador.sol": "Modificador"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/10_Modificador.sol": {
+			"keccak256": "0x617ef162bd29bd68617b0a3a1e8db6b5cec6d259c1e7004dab7eba50d874f6ba",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://946f4c4e2889e0af29d01bf093c9a727c366d6d82d4cb6e624e2db1400a9a664",
+				"dweb:/ipfs/QmYrEQ1THJ146HJsWYdyTZR8AxH6QnQPyKJrSAj8nb4oTP"
+			]
+		}
+	},
+	"version": 1
+}
