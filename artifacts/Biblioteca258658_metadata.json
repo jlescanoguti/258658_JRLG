@@ -37,6 +37,11 @@
 						"internalType": "string",
 						"name": "_autor",
 						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "_estado",
+						"type": "bool"
 					}
 				],
 				"name": "agregarElemento",
@@ -112,8 +117,20 @@
 						"internalType": "string",
 						"name": "autor",
 						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "estado",
+						"type": "bool"
 					}
 				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mostrarActivos",
+				"outputs": [],
 				"stateMutability": "view",
 				"type": "function"
 			},
@@ -159,11 +176,19 @@
 	},
 	"sources": {
 		"contracts/18_PC1_Examen.sol": {
-			"keccak256": "0x535ad177b848448251d8bebefafcb20d4980986506894922419b5e60a82e6955",
+			"keccak256": "0x625894912358caf5a68be9eddae0d238c08e52f029f5eaa9d2e61302a9f5e0b6",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://769a4ceb3162a6ee88d2f3c183d1b55a4ad2495d8603233c906a488c7222aba5",
-				"dweb:/ipfs/QmSCFHRHY3pUJ6LoeL2MM4DEr5WCwC6JvaBEr3bhXjESNi"
+				"bzz-raw://aee70aef78369cb844c33b75d385775ea02fb7089adb3ba79e139df967ca4cc7",
+				"dweb:/ipfs/QmdzNAziB7UCCBjo6H7eF17QRA1offcjbuQTieXbAYyRj5"
+			]
+		},
+		"hardhat/console.sol": {
+			"keccak256": "0x7434453e6d3b7d0e5d0eb7846ffdbc27f0ccf3b163591263739b628074dc103a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://49355f780520494d1d5a0f01858385e51bb5280ce0ecfb960f16995065dca395",
+				"dweb:/ipfs/QmSwJ6C5QLz6xKeQZS8wbwjU1KxRFTYfwbGmtzisd5sRW4"
 			]
 		}
 	},
