@@ -6,4 +6,4 @@ contract GetCuenta {
     }
 }
 
-//https://github.com/jlescanoguti/258658_JRLG/tree/main/contracts/17_PC1_GetCuenta.sol
+//https://github.com/jlescanoguti/258658_JRLG/blob/main/contracts/17_PC1_GetCuenta.sol
