@@ -231,7 +231,7 @@
   "contracts/18_PC1_Examen.sol": {
     "__sources__": {
       "contracts/18_PC1_Examen.sol": {
-        "content": "// SPDX-License-Identifier: GPL-3.0\r\npragma solidity >=0.8.2 <0.9.0;\r\n\r\ncontract Biblioteca258658 {\r\n\r\n    struct Libro {\r\n        uint256 id;\r\n        string titulo;\r\n        uint256 paginas;\r\n        string autor;\r\n    }\r\n\r\n    Libro[] public libros;\r\n\r\n    uint256 public posicion;\r\n    address public direccion;\r\n\r\n    constructor(uint256 _posicion) {\r\n        posicion = _posicion;\r\n        direccion = msg.sender;\r\n    }\r\n}",
+        "content": "// SPDX-License-Identifier: GPL-3.0\r\npragma solidity >=0.8.1 <0.9.0;\r\n\r\ncontract Biblioteca258658 {\r\n\r\n    struct Libro {\r\n        uint256 id;\r\n        string titulo;\r\n        uint256 paginas;\r\n        string autor;\r\n    }\r\n\r\n    Libro[] public libros;\r\n\r\n    uint256 public posicion;\r\n    address public direccion;\r\n    uint256 private cantidad;\r\n\r\n    constructor(uint256 _posicion) {\r\n        posicion = _posicion;\r\n        direccion = msg.sender;\r\n    }\r\n\r\n    function agregarElemento(uint256 _id, string memory _titulo, uint256 _paginas, string memory _autor) public {\r\n        require(_id % 2 == 0, \"No se permiten id impares\");\r\n        libros.push(Libro(_id, _titulo, _paginas, _autor));\r\n        cantidad = cantidad + 1;\r\n    }\r\n\r\n    function contarElementos() public view returns (uint256) {\r\n        return cantidad;\r\n    }\r\n\r\n    function cambiarDireccion(address _direccion) public {\r\n        direccion = _direccion;\r\n    }\r\n\r\n}",
         "file": "contracts/18_PC1_Examen.sol"
       }
     }
