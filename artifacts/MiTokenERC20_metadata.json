@@ -221,7 +221,7 @@
 						"type": "address"
 					}
 				],
-				"name": "balanceOfBFC",
+				"name": "balanceOfBFT",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -246,6 +246,61 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_cuenta",
+						"type": "address"
+					}
+				],
+				"name": "esSocio",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_cantidad",
+						"type": "uint256"
+					}
+				],
+				"name": "mintear",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_cantidad",
+						"type": "uint256"
+					}
+				],
+				"name": "mintearBFT",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "name",
 				"outputs": [
@@ -253,6 +308,19 @@
 						"internalType": "string",
 						"name": "",
 						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -286,7 +354,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "totalSupplyBFC",
+				"name": "totalSupplyBFT",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -509,11 +577,11 @@
 			]
 		},
 		"contracts/20_MiTokenERC20.sol": {
-			"keccak256": "0x7e473316aeb2220ee8a211a72e4d765260fa4d6939aa94a088f7139a5aa10191",
+			"keccak256": "0x8b2710decaf6cc05414e32d49293a45ca046f18d030900893aa21867b1c19609",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://a6d6487302b8ea9a781d211522c9be33de69b40af53c65fb4d9de4e7d15ed078",
-				"dweb:/ipfs/QmdX2dVSCxJxMubrcFwNjrHqXsaTBS5DCy99FRuShmM5vF"
+				"bzz-raw://2f94ef02f58da44b02f3d22157a8cc1ddf50f501e51b71e51b1343a2fb9fb74f",
+				"dweb:/ipfs/QmXjx8GEFUKB4arhLQR1Csfg1Eo1e4Hh5wuFZh2vR5c6NC"
 			]
 		}
 	},
