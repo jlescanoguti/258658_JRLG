@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.34+commit.80d5c536"
+		"version": "0.8.38+commit.1835d247"
 	},
 	"language": "Solidity",
 	"output": {
@@ -13,6 +13,12 @@
 						"internalType": "address",
 						"name": "invocador",
 						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "anteriorValor",
+						"type": "uint256"
 					},
 					{
 						"indexed": false,
@@ -66,7 +72,7 @@
 		"compilationTarget": {
 			"contracts/7_Eventos.sol": "Eventos"
 		},
-		"evmVersion": "osaka",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -79,11 +85,11 @@
 	},
 	"sources": {
 		"contracts/7_Eventos.sol": {
-			"keccak256": "0xab67faf1665736af74d7af9f35731d307e19aed9861d7aab15d16eb6031fbcfc",
+			"keccak256": "0x054418e79f53b7623176521474930b7a31d37da70db3ffc119f7662c676e197f",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://7de10153916142fd3a00965ebbd893c933fb34b6e6d44aaf9b4a761095d93728",
-				"dweb:/ipfs/Qmedx7f4XRRPsMt1EqDf2HTTrQ8rjQj6baF1i8dXWZNaZw"
+				"bzz-raw://4220db266607da3a40165c9d16f036457ced2d944266a502fdf365d4eb595e38",
+				"dweb:/ipfs/QmTokzrTcm89EE4S9SUnMtPXewYTG77TjBTWmo5Zh1VwP8"
 			]
 		}
 	},

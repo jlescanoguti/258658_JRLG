@@ -2,8 +2,6 @@
 pragma solidity >=0.8.2 <0.9.0;
 
 contract Teleton {
-    
-    mapping(address => bool) public administradores;
     address public owner;
 
 
@@ -16,29 +14,12 @@ contract Teleton {
         _;
     }
 
-    modifier isAdministrador() {
-        require(administradores[msg.sender] == true, "No eres parte de los administadores");
-        _;
-    }
-
-    function agregarAdministrador(address _cuenta) public isOwner {
-        administradores[_cuenta] = true;        
-    }
-
-    function consultarBalance() public view isAdministrador returns (uint256) {
-        return address(this).balance;
-    } 
-
     function depositar() public payable {
 
     }
 
     function retirar() public isOwner {
-        payable(owner).transfer(address(this).balance);
-    }
-
-    function retirarAdministrador(address _cuenta) public isAdministrador {
-        payable(_cuenta).transfer(address(this).balance);
+        payable(owner).transfer(address(this).balance);    
     }
 
 }

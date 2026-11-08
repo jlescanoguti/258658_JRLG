@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.34+commit.80d5c536"
+		"version": "0.8.38+commit.1835d247"
 	},
 	"language": "Solidity",
 	"output": {
@@ -40,7 +40,7 @@
 		"compilationTarget": {
 			"contracts/17_PC1_GetCuenta.sol": "GetCuenta"
 		},
-		"evmVersion": "osaka",
+		"evmVersion": "prague",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -53,11 +53,11 @@
 	},
 	"sources": {
 		"contracts/17_PC1_GetCuenta.sol": {
-			"keccak256": "0x010f609f8c08a8e75d6a072ec89794ade24f66241d89bb14824231603e940f7b",
+			"keccak256": "0xad016e93c60f6e1d3fc5d67ff3478b7f9da0a27f737be4f6fd08b40f410eef98",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://66e4cfea7e10265aa49b6b09f492bfdd18fbfcff93d63e9b0b72b72261e325b8",
-				"dweb:/ipfs/QmWRo7ffpNZnUAFcL8CBqRARZMEFWFtCspjSr8qZS2zuaH"
+				"bzz-raw://771f0d9de83c412c1ebbd0c1f66a0c452e9946afcc1266b76ecf48da8fcc7c32",
+				"dweb:/ipfs/QmP8P5tFBoUeJYkqfUp5iJvaUpU8UCsfxMJEDXwuH3YAuP"
 			]
 		}
 	},

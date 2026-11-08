@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.34+commit.80d5c536"
+		"version": "0.8.38+commit.1835d247"
 	},
 	"language": "Solidity",
 	"output": {
@@ -524,7 +524,7 @@
 		"compilationTarget": {
 			"contracts/20_MiTokenERC20.sol": "MiTokenERC20"
 		},
-		"evmVersion": "osaka",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"

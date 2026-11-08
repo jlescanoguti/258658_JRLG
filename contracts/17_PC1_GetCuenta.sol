@@ -5,5 +5,3 @@ contract GetCuenta {
         return uint256(keccak256(abi.encodePacked(codigo))) % 15 + 1;
     }
 }
-
-//https://github.com/jlescanoguti/258658_JRLG/blob/main/contracts/17_PC1_GetCuenta.sol
