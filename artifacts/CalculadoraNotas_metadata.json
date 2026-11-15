@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.38+commit.1835d247"
+		"version": "0.8.34+commit.80d5c536"
 	},
 	"language": "Solidity",
 	"output": {
@@ -33,6 +33,32 @@
 				],
 				"stateMutability": "pure",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "devolverFormula",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "formula",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -50,7 +76,7 @@
 		"compilationTarget": {
 			"contracts/23_ReutilizarContrato.sol": "CalculadoraNotas"
 		},
-		"evmVersion": "paris",
+		"evmVersion": "osaka",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -79,11 +105,11 @@
 			]
 		},
 		"contracts/23_ReutilizarContrato.sol": {
-			"keccak256": "0x884a2dfd1234973462e9df998a057d0f053141dcee0c9f3c17079c38546f2e9c",
+			"keccak256": "0xffecf7d582c222bef9e062032ae2fdba4a9126c372f5f3eb50d237ce2fa27cfe",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://cb6166bed4d4062ff7141fa0beca141c3734a4e2db75d36f5c5402a21fde25c7",
-				"dweb:/ipfs/QmRdVrKmvhPUoPPxPZigrC8MmhfVqgmYC6wm8LKSUQEkCz"
+				"bzz-raw://62268eb6934bfaca6a39b781cf8a001749eb0b5475f10ccf48242c5f0b5e7e83",
+				"dweb:/ipfs/Qme2i8weWswUzrNTe2E32gcMggFJdGeDgU1rccXunosL6W"
 			]
 		}
 	},

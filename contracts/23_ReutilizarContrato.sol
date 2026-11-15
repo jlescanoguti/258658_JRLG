@@ -5,10 +5,16 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract CalculadoraNotas {
 
+    string public formula = "(teoria * 20 + practica * 20 + laboratorio * 60) / 100";
+
     function calcularNotaFinal(uint256 teoria, uint256 practica, uint256 laboratorio) public pure returns(uint256) {
-        return (teoria+practica+laboratorio) / 3;
+        return (teoria * 20 + practica * 20 + laboratorio * 60) / 100;
     }
-    
+
+    function devolverFormula() public view returns(string memory) {
+        return formula;
+    }
+
 }
 
 contract RegistroNotas is Ownable {
@@ -16,7 +22,7 @@ contract RegistroNotas is Ownable {
 
     mapping(address => uint256) public notasAlumnos;
 
-    constructor(address _addressCalculadora) Ownable(msg.sender){
+    constructor(address _addressCalculadora) Ownable(msg.sender) {
         addressCalculadora = _addressCalculadora;
     }
 
@@ -32,6 +38,11 @@ contract RegistroNotas is Ownable {
 
     function verMiNota() public view returns(uint256) {
         return notasAlumnos[msg.sender];
+    }
+
+    function verFormula() public view returns(string memory) {
+        CalculadoraNotas calculadora = CalculadoraNotas(addressCalculadora);
+        return calculadora.devolverFormula();
     }
 
 }
